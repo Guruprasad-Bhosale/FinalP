@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scan - PlantPedia</title>
+  <link rel="stylesheet" href="file:///C:/Users/shivani/Desktop/PlantPedia/static/style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+        <div class="toggle-switch" onclick="toggleTheme()">🌓</div>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="scan.html">Scan</a></li>
+    </ul>
+  </nav>
+
+  <section class="scan-section">
+    <h1>Scan a Plant</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+      <input type="file" name="plantImage" accept="image/*" capture="camera" required>
+      <button type="submit">Identify Plant</button>
+    </form>
+  </section>
+</body>
+</html>
